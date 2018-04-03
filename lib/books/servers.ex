@@ -1,18 +1,90 @@
 defmodule Books.Servers do
   def all do
     [
-      %{name: "🇭🇰svip21", host: "svip21.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇭🇰svip22", host: "svip22.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇭🇰svip23", host: "svip23.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇯🇵svip24", host: "svip24.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇷🇺svip25", host: "svip25.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇷🇺svip26", host: "svip26.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇦🇺svip27", host: "svip27.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇦🇺svip28", host: "svip28.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇺🇸svip29", host: "svip29.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇺🇸svip30", host: "svip30.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇬🇧svip31", host: "svip31.mm1080p.rocks", port: 555, socks5_tls: true},
-      %{name: "🇬🇧svip32", host: "svip32.mm1080p.rocks", port: 555, socks5_tls: true}
+      %{
+        name: "🇭🇰svip21香港",
+        host: "svip21.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇭🇰svip22香港",
+        host: "svip22.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇭🇰svip23香港",
+        host: "svip23.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇯🇵svip24日本",
+        host: "svip24.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: false
+      },
+      %{
+        name: "🇷🇺svip25俄罗斯",
+        host: "svip25.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇷🇺svip26俄罗斯",
+        host: "svip26.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇦🇺svip27美国",
+        host: "svip27.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: false
+      },
+      %{
+        name: "🇦🇺svip28美国",
+        host: "svip28.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: false
+      },
+      %{
+        name: "🇺🇸svip29澳洲",
+        host: "svip29.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇺🇸svip30澳洲",
+        host: "svip30.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇬🇧svip31英国",
+        host: "svip31.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: false
+      },
+      %{
+        name: "🇬🇧svip32英国",
+        host: "svip32.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: false
+      }
     ]
   end
 
