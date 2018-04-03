@@ -16,7 +16,7 @@ enhanced-mode-by-rule = true
 <% end %>
  
 [Proxy Group]
-Proxy = select,<%= Enum.map_join(@s5_servers, ", ", fn s -> s.name end)%>
+Proxy = select,<%= Enum.map_join(@s5_servers, ", ", fn s -> "#{s.name}.socks5-tls" end)%>
 Apple = select,DIRECT,Proxy
 
 [Rule]
