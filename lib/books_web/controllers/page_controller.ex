@@ -15,6 +15,6 @@ defmodule BooksWeb.PageController do
 
   # https://books.dsh.li/ssr?password=aaa&port=96481
   def ssr(conn, %{"port" => port, "password" => password}) do
-    text conn, Servers.ssr_text(port, password)
+    text conn, Servers.ssr_text(String.to_integer(port), password)
   end
 end

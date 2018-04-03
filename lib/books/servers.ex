@@ -106,7 +106,15 @@ defmodule Books.Servers do
     url_encode64(text, padding: false)
   end
 
-  defp single_ssr_text(s, port, password) do
+  defp single_ssr_text(s, port, password) when port > 9680 do
+    group = e64("books")
+    name = e64("#{s.name}.ssr")
+    obfsparam = e64("#{port}:#{password}")
+    pass = e64("123456")
+    "#{s.host}:443:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{pass}/?obfsparam=#{obfsparam}&remarks=#{name}&group=#{group}"
+  end
+
+  defp single_ssr_text(s, port, password)  do
     group = e64("books")
     name = e64("#{s.name}.ssr")
     "#{s.host}:#{port}:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{e64(password)}/?remarks=#{name}&group=#{group}"
