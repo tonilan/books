@@ -1,4 +1,6 @@
 defmodule Books.Servers do
+  import Base 
+
   def all do
     [
       %{
@@ -90,5 +92,22 @@ defmodule Books.Servers do
 
   def socks5_tls do
     Enum.filter(all(), fn s -> s.socks5_tls end)
+  end
+  
+  def ssr_text(port, password) do
+    all()
+    |> Enum.filter(fn s -> s.ssr end)
+    |> Enum.map(fn s -> single_ssr_text(s, port, password) end)
+    |> Enum.map_join("\n", fn str -> "ssr://#{url_encode64(str, padding: false)}" end)
+    |> e64()
+  end
+
+  defp e64(text) do
+    url_encode64(text, padding: false)
+  end
+
+  defp single_ssr_text(s, port, password) do
+    group = e64("books")
+    "#{s.host}:#{port}:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{e64(password)}/?remarks=#{e64(s.name)}&group=#{group}"
   end
 end

@@ -17,7 +17,8 @@ defmodule BooksWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/surge_books", PageController, :surge
+    get "/surge", PageController, :surge
+    get "/ssr", PageController, :ssr
   end
 
   # Other scopes may use custom stacks.
