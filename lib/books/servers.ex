@@ -111,7 +111,7 @@ defmodule Books.Servers do
     name = e64("#{s.name}.ssr")
     obfsparam = e64("#{port}:#{password}")
     pass = e64("123456")
-    "#{s.host}:443:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{pass}/?obfsparam=#{obfsparam}&remarks=#{name}&group=#{group}"
+    "#{s.host}:443:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{pass}/?protoparam=#{obfsparam}&remarks=#{name}&group=#{group}"
   end
 
   defp single_ssr_text(s, port, password)  do
