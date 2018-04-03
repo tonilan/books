@@ -4,84 +4,84 @@ defmodule Books.Servers do
   def all do
     [
       %{
-        name: "🇭🇰svip21香港",
+        name: "🇭🇰香港 svip21",
         host: "svip21.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰svip22香港",
+        name: "🇭🇰香港 svip22",
         host: "svip22.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰svip23香港",
+        name: "🇭🇰香港 svip23",
         host: "svip23.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵svip24日本",
+        name: "🇯🇵日本 svip24",
         host: "svip24.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: false
       },
       %{
-        name: "🇷🇺svip25俄罗斯",
+        name: "🇷🇺俄罗斯 svip25",
         host: "svip25.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺svip26俄罗斯",
+        name: "🇷🇺俄罗斯 svip26",
         host: "svip26.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇦🇺svip27美国",
+        name: "🇦🇺美国 svip27",
         host: "svip27.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: false
       },
       %{
-        name: "🇦🇺svip28美国",
+        name: "🇦🇺美国 svip28",
         host: "svip28.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: false
       },
       %{
-        name: "🇺🇸svip29澳洲",
+        name: "🇺🇸澳洲 svip29",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸svip30澳洲",
+        name: "🇺🇸澳洲 svip30",
         host: "svip30.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇬🇧svip31英国",
+        name: "🇬🇧英国 svip31",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: false
       },
       %{
-        name: "🇬🇧svip32英国",
+        name: "🇬🇧英国 svip32",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -108,6 +108,7 @@ defmodule Books.Servers do
 
   defp single_ssr_text(s, port, password) do
     group = e64("books")
-    "#{s.host}:#{port}:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{e64(password)}/?remarks=#{e64(s.name)}&group=#{group}"
+    name = e64("#{s.name}.ssr")
+    "#{s.host}:#{port}:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{e64(password)}/?remarks=#{name}&group=#{group}"
   end
 end

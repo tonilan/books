@@ -12,7 +12,7 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 <%= for server <- @s5_servers do %>
-<%= server.name %> = socks5-tls, <%= server.host %> , <%= server.s5_port %> , <%= @username %>, <%= @password %>, skip-cert-verify=true
+<%= server.name %>.socks5-tls = socks5-tls, <%= server.host %> , <%= server.s5_port %> , <%= @username %>, <%= @password %>, skip-cert-verify=true
 <% end %>
  
 [Proxy Group]
