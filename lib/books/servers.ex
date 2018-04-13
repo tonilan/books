@@ -74,14 +74,14 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇬🇧英国 svip31",
+        name: "🇯🇵日本 svip31",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: false
       },
       %{
-        name: "🇬🇧英国 svip32",
+        name: "🇯🇵日本 svip32",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
