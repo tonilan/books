@@ -29,7 +29,7 @@ defmodule Books.Servers do
         host: "svip24.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
-        ssr: false
+        ssr: true
       },
       %{
         name: "🇷🇺俄罗斯 svip25",
