@@ -60,14 +60,14 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇦🇺美国 svip29",
+        name: "🇺🇸美国 svip29",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇦🇺美国 svip30",
+        name: "🇺🇸美国 svip30",
         host: "svip30.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
