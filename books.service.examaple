@@ -1,0 +1,19 @@
+[Unit]
+Description=books
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/ifsclimbing/books/
+ExecStart=/usr/local/bin/mix phx.server 
+Restart=on-failure
+RestartSec=5
+Environment=MIX_ENV=prod
+Environment=LANG=en_US.UTF-8
+SyslogIdentifier=books
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target
