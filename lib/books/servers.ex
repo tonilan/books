@@ -78,14 +78,14 @@ defmodule Books.Servers do
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
-        ssr: false
+        ssr: true
       },
       %{
         name: "🇯🇵日本 svip32",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
-        ssr: false
+        ssr: true
       },
       %{
         name: "🇰🇷韩国 svip33",
