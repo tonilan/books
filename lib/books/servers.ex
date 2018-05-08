@@ -129,7 +129,7 @@ defmodule Books.Servers do
 
   defp single_ssr_text(s, port, password) when port > 9680 do
     group = e64("books")
-    name = e64("#{s.name}.ssr")
+    name = e64(s.name)
     obfsparam = e64("#{port}:#{password}")
     pass = e64("123456")
     "#{s.host}:443:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{pass}/?protoparam=#{obfsparam}&remarks=#{name}&group=#{group}"
