@@ -137,7 +137,7 @@ defmodule Books.Servers do
 
   defp single_ssr_text(s, port, password)  do
     group = e64("books")
-    name = e64("#{s.name}.ssr")
+    name = e64(s.name)
     "#{s.host}:#{port}:auth_aes128_md5:aes-256-cfb:tls1.2_ticket_auth:#{e64(password)}/?remarks=#{name}&group=#{group}"
   end
 end
