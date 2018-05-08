@@ -3,7 +3,8 @@ defmodule BooksWeb.PageController do
   alias Books.Servers
 
   def index(conn, _params) do
-    render conn, "index.html"
+    url = current_url(conn)
+    render conn, "index.html", url: url
   end
 
   # https://books.dsh.li/surge?password=aaa&username=96481
