@@ -4,28 +4,28 @@ defmodule Books.Servers do
   def all do
     [
       %{
-        name: "🇭🇰香港 svip21",
+        name: "🇯🇵日本 svip21-NHN",
         host: "svip21.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip22",
+        name: "🇲🇴澳门 svip22-CTM",
         host: "svip22.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip23",
+        name: "🇭🇰香港 svip23-HKBN",
         host: "svip23.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip24",
+        name: "🇭🇰香港 svip24-CN2",
         host: "svip24.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -60,49 +60,49 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip29",
+        name: "🇺🇸美国 svip29-CN2",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip30",
+        name: "🇺🇸美国 svip30-CN2",
         host: "svip30.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip31",
+        name: "🇯🇵日本 svip31-NHN",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip32",
+        name: "🇯🇵日本 svip32-NHN",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇰🇷韩国 svip33",
+        name: "🇰🇷韩国 svip33-KT",
         host: "svip33.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip34",
+        name: "🇯🇵日本 svip34-NHN",
         host: "svip34.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip35",
+        name: "🇯🇵日本 svip35-NHN",
         host: "svip35.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
