@@ -32,28 +32,28 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇷🇺俄罗斯 svip25",
+        name: "🇷🇺俄国 svip25",
         host: "svip25.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄罗斯 svip26",
+        name: "🇷🇺俄国 svip26",
         host: "svip26.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄罗斯 svip27",
+        name: "🇷🇺俄国 svip27",
         host: "svip27.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄罗斯 svip28",
+        name: "🇷🇺俄国 svip28",
         host: "svip28.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -81,7 +81,7 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip32-NHN",
+        name: "🇺🇸美国 svip30-CN2",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
