@@ -81,7 +81,7 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip30-CN2",
+        name: "🇺🇸美国 svip32-CN2",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
