@@ -127,7 +127,7 @@ defmodule Books.Servers do
     url_encode64(text, padding: false)
   end
 
-  defp single_ssr_text(s, port, password) when port > 9680 do
+  defp single_ssr_text(s, port, password) when port > 9680 or port < 9000 do
     group = e64("books")
     name = e64(s.name)
     obfsparam = e64("#{port}:#{password}")
