@@ -27,6 +27,7 @@ DOMAIN-SUFFIX,nflxext.com,Proxy
 DOMAIN-SUFFIX,nflximg.com,Proxy
 DOMAIN-SUFFIX,nflximg.net,Proxy
 DOMAIN-SUFFIX,nflxvideo.net,Proxy
+DOMAIN-SUFFIX,nflxso.net,Proxy
 IP-CIDR,45.57.0.0/17,Proxy,no-resolve
 IP-CIDR,23.246.0.0/18,Proxy,no-resolve
 IP-CIDR,198.45.48.0/20,Proxy,no-resolve
