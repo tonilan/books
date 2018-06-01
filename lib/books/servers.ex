@@ -4,14 +4,14 @@ defmodule Books.Servers do
   def all do
     [
       %{
-        name: "🇯🇵日本 svip21-NHN",
+        name: "🇲🇴澳门 svip21-CTM",
         host: "svip21.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇲🇴澳门 svip22-CTM",
+        name: "🇭🇰香港 svip22-HKBN",
         host: "svip22.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
