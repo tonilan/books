@@ -11,7 +11,7 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip22-HKBN",
+        name: "🇯🇵日本 svip22-IJJ",
         host: "svip22.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
