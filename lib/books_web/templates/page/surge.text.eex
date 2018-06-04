@@ -298,6 +298,9 @@ DOMAIN-SUFFIX,wsj.net,Proxy
 DOMAIN-SUFFIX,yahoo.com,Proxy
 DOMAIN-SUFFIX,youtu.be,Proxy
 DOMAIN-SUFFIX,ytimg.com,Proxy
+DOMAIN-SUFFIX,stripe.com,Proxy
+DOMAIN-SUFFIX,gitlab.com,Proxy,enhanced-mode
+DOMAIN-SUFFIX,continuum.io,Proxy,enhanced-mode
 
 # Telegram
 IP-CIDR,91.108.56.0/22,Proxy,no-resolve
