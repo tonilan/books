@@ -88,7 +88,7 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇰🇷韩国 svip33-KT",
+        name: "🇭🇰香港 svip33-HKBN",
         host: "svip33.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
