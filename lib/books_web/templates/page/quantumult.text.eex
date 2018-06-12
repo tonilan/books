@@ -1,0 +1,38 @@
+[SERVER]
+
+[SOURCE]
+Books, server, https://sub.bookshop.studio/ssr?password=<%= @password %>&port=<%= @port %>, false, true, false, Books
+
+lhie1(左滑选择Replace), filter, https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult.conf, true
+lhie1(左滑选择Append), filter, https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult_Extra.conf, true
+lhie1(左滑选择Replace), blacklist, https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult_URL.conf, true
+
+rixCloud, filter, https://static.rixcloud.io/Resources/iOS/Quantumult/Rules/Default.conf, true
+rixCloud, blacklist, https://static.rixcloud.io/Resources/iOS/Quantumult/Rules/Reject.conf, false
+
+[BACKUP-SERVER]
+
+[POLICY]
+
+[DNS]
+
+[REWRITE]
+
+[URL-REJECTION]
+
+[TCP]
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+GEOIP,CN,DIRECT
+FINAL,PROXY
+[GLOBAL]
+
+[HOST]
+
+[STATE]
+STATE,AUTO
+
+[MITM]
+

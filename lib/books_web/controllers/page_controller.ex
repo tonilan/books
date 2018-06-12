@@ -18,4 +18,8 @@ defmodule BooksWeb.PageController do
   def ssr(conn, %{"port" => port, "password" => password}) do
     text conn, Servers.ssr_text(String.to_integer(port), password)
   end
+
+  def quantumult(conn, %{"port" => port, "password" => password}) do
+    render conn, "quantumult.text", password: password, port: port
+  end
 end

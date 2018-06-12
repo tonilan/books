@@ -19,6 +19,7 @@ defmodule BooksWeb.Router do
     get "/", PageController, :index
     get "/surge", PageController, :surge
     get "/ssr", PageController, :ssr
+    get "/quantumult", PageController, :quantumult
   end
 
   # Other scopes may use custom stacks.
