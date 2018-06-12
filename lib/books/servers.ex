@@ -114,13 +114,31 @@ defmodule Books.Servers do
   def socks5_tls do
     Enum.filter(all(), fn s -> s.socks5_tls end)
   end
+
+  def ssr_server do
+    Enum.filter(all(), fn s -> s.ssr end)
+  end
   
   def ssr_text(port, password) do
-    all()
-    |> Enum.filter(fn s -> s.ssr end)
+    ssr_server()
     |> Enum.map(fn s -> single_ssr_text(s, port, password) end)
     |> Enum.map_join("\n", fn str -> "ssr://#{url_encode64(str, padding: false)}" end)
     |> e64()
+  end
+
+  def quantumult_ssr_text(port, password) do
+    ssr_server()
+    |> Enum.map(fn s -> quantumult_single_ssr_text(s, port, password) end)
+    |> Enum.join("\n")
+  end
+
+  def quantumult_single_ssr_text(s, port, password) when port > 9680 or port < 9000 do
+    protocol_param = "#{port}:#{password}"
+    "#{s.name} = shadowsocksr, #{s.host}, 443, aes-256-cfb, #{password}, group=books, protocol=auth_aes128_md5, protocol_param=#{protocol_param}, obfs=tls1.2_ticket_auth"
+  end
+
+  def quantumult_single_ssr_text(s, port, password) do
+    "#{s.name} = shadowsocksr, #{s.host}, #{port}, aes-256-cfb, #{password}, group=books, protocol=auth_aes128_md5, obfs=tls1.2_ticket_auth"
   end
 
   defp e64(text) do

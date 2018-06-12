@@ -1,4 +1,5 @@
 [SERVER]
+<%= @ssr_server_text %>
 
 [SOURCE]
 Books, server, https://sub.bookshop.studio/ssr?password=<%= @password %>&port=<%= @port %>, false, true, false, Books
