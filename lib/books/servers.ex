@@ -25,7 +25,7 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip24-CN2",
+        name: "🇭🇰香港 svip24-Game CN2",
         host: "svip24.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
