@@ -74,7 +74,7 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip31-NHN",
+        name: "🇯🇵日本 svip31-IJJ",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
