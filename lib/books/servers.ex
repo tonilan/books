@@ -107,6 +107,13 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true
+      },
+      %{
+        name: "🇨🇳台湾 svip36-Hinet",
+        host: "svip36.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
       }
     ]
   end
