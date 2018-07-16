@@ -4,112 +4,112 @@ defmodule Books.Servers do
   def all do
     [
       %{
-        name: "🇭🇰香港 svip21-HKT",
+        name: "🇭🇰香港 21-HKT 无限流量",
         host: "svip21.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip22-IJJ",
+        name: "🇯🇵日本 22-IJJ 无限流量",
         host: "svip22.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip23-HKBN",
+        name: "🇭🇰香港 23-HKBN 流量珍贵",
         host: "svip23.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip24-Game CN2",
+        name: "🇭🇰香港 24-HKT 无限流量",
         host: "svip24.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄国 svip25",
+        name: "🇷🇺俄国 25 无限流量",
         host: "svip25.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄国 svip26",
+        name: "🇷🇺俄国 26 无限流量",
         host: "svip26.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄国 svip27",
+        name: "🇷🇺俄国 27 无限流量",
         host: "svip27.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇷🇺俄国 svip28",
+        name: "🇷🇺俄国 28 无限流量",
         host: "svip28.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip29-GIA CN2",
+        name: "🇺🇸美国 29-GIA CN2 流量珍贵",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip30-GIA CN2",
+        name: "🇺🇸美国 30-GIA CN2 流量珍贵",
         host: "svip30.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 svip31-IJJ",
+        name: "🇯🇵日本 31-IJJ 无限流量",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip32-GIA CN2",
+        name: "🇺🇸美国 32-GIA CN2 流量珍贵",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇭🇰香港 svip33-HKBN",
+        name: "🇭🇰香港 33-HKBN 流量珍贵",
         host: "svip33.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇰🇷韩国 svip34-KT",
+        name: "🇰🇷韩国 34-Kdatacenter 流量珍贵",
         host: "svip34.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸美国 svip35-GIA CN2",
+        name: "🇺🇸美国 35-GIA CN2 流量珍贵",
         host: "svip35.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇨🇳台湾 svip36-Hinet",
+        name: "🇯🇵日本 36-软银 流量珍贵",
         host: "svip36.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
