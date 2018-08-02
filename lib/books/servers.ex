@@ -107,6 +107,20 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true
+      },
+      %{
+        name: "🇷🇺伯力 36流量珍贵",
+        host: "svip36.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
+      },
+      %{
+        name: "🇷🇺伯力 37流量珍贵",
+        host: "svip37.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true
       }
     ]
   end
