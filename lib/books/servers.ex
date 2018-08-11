@@ -53,14 +53,14 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇰🇷韩国 28流量珍贵 Kdatacenter",
+        name: "🇰🇷韩国 28流量珍贵 SK",
         host: "svip28.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇺🇸美国 29流量珍贵 GIA CN2",
+        name: "🇰🇷韩国 29流量珍贵 SK",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -88,21 +88,21 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇯🇵日本 33无限流量 IJJ",
+        name: "🇺🇸美国 33流量珍贵 GIA CN2",
         host: "svip33.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 34无限流量 IJJ",
+        name: "🇯🇵日本 34无限流量 IIJ",
         host: "svip34.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇯🇵日本 35无限流量 IJJ",
+        name: "🇯🇵日本 35无限流量 IIJ",
         host: "svip35.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
