@@ -53,14 +53,14 @@ defmodule Books.Servers do
         ssr: true
       },
       %{
-        name: "🇰🇷韩国 28流量珍贵 SK",
+        name: "🇰🇷韩国 28无限流量 SK",
         host: "svip28.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true
       },
       %{
-        name: "🇰🇷韩国 29流量珍贵 SK",
+        name: "🇰🇷韩国 29无限流量 SK",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
