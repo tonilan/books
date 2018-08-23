@@ -26,6 +26,7 @@ new Vue({
   el: '#app-6',
   data: {
     port: '',
-    password: ''
+    password: '',
+    uuid: ''
   }
 })
