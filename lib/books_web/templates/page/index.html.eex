@@ -25,7 +25,7 @@
   <h3>V2ray用户</h3>
   <form>
     <div class="form-group">
-      <label for="Password">UUID(可选，V2Ray用户)</label>
+      <label for="Password">UUID（上面参数port password 可选，填写会生成 ssr 订阅地址）</label>
       <input type="input" class="form-control" id="uuid" v-model="uuid"  placeholder="uuid">
     </div>
   </form>
