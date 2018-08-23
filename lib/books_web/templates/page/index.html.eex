@@ -22,7 +22,7 @@
   </div>
 
   </br>
-  <h3>V2ray用户</h3>
+  <h3>V2Ray用户</h3>
   <form>
     <div class="form-group">
       <label for="Password">UUID（上面参数port password 可选，填写会生成 ssr 订阅地址）</label>
