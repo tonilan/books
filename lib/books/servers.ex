@@ -149,6 +149,10 @@ defmodule Books.Servers do
   def ssr_server do
     Enum.filter(all(), fn s -> s.ssr end)
   end
+
+  def vmess_server do
+    Enum.filter(all(), fn s -> s.vmess end)
+  end
   
   def ssr_text(port, password) do
     ssr_server()

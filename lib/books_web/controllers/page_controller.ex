@@ -23,4 +23,8 @@ defmodule BooksWeb.PageController do
     ssr_server_text = Servers.quantumult_ssr_text(String.to_integer(port), password)
     render conn, "quantumult.text", password: password, port: port, ssr_server_text: ssr_server_text
   end
+
+  def quantumult_v2(conn, %{"uuid" => uuid} = params) do
+    render conn, "quantumult_v2.text", uuid: uuid, params: params
+  end
 end

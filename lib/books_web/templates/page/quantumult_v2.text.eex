@@ -1,0 +1,44 @@
+[SERVER]
+
+<%= for server <- Books.Servers.vmess_server do %>
+<%= server.name %> V2Ray = vmess, <%= server.host %> , 10086 , aes-128-cfb, <%= @uuid %>,  over-tls=true, certificate=0
+<% end %>
+
+[SOURCE]
+<%= if  @params["password"] != nil and  @params["password"] != "" and @params["port"] != nil and @params["port"] != "" do %>
+Books, server, https://sub.bookshop.studio/ssr?password=<%= @params["password"] %>&port=<%= @params["port"] %>, false, true, false, Books
+<% end %>
+lhie1(左滑选择Replace), filter, https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult.conf, true
+lhie1(左滑选择Append), filter, https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult_Extra.conf, true
+lhie1(左滑选择Replace), blacklist, https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult_URL.conf, true
+
+rixCloud, filter, https://static.rixcloud.io/Resources/iOS/Quantumult/Rules/Default.conf, true
+rixCloud, blacklist, https://static.rixcloud.io/Resources/iOS/Quantumult/Rules/Reject.conf, false
+
+[BACKUP-SERVER]
+
+[POLICY]
+
+[DNS]
+
+[REWRITE]
+
+[URL-REJECTION]
+
+[TCP]
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+GEOIP,CN,DIRECT
+FINAL,PROXY
+[GLOBAL]
+
+[HOST]
+
+[STATE]
+STATE,AUTO
+
+[MITM]
+
