@@ -13,7 +13,7 @@
   <div>
     <h3>Surge</h3>
     <p><%= @url %>surge?password={{password}}&username={{port}}</p>
-    <h3>ShadowsocksR</h3>
+    <h3>ShadowsocksR & Quantumult SSR订阅</h3>
     <p><%= @url %>ssr?password={{password}}&port={{port}}</p>
     <h3>Quantumult(Download from...)</h3>
     <p><%= @url %>quantumult?password={{password}}&port={{port}}</p>
