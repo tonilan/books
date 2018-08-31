@@ -3,13 +3,13 @@ defmodule BooksWeb.PageController do
   alias Books.Servers
 
   def index(conn, _params) do
-    url = current_url(conn)
+    url = request_host(conn)
     render conn, "index.html", url: url
   end
 
   # https://books.dsh.li/surge?password=aaa&username=96481
   def surge(conn, %{"username" => username, "password" => password}) do
-    url = current_url(conn)
+    url = request_host(conn) <> conn.request_path <> "?" <> conn.query_string
     s5_servers = Servers.socks5_tls()
     render conn, "surge.text", url: url, username: username, password: password, s5_servers: s5_servers
   end
@@ -26,5 +26,9 @@ defmodule BooksWeb.PageController do
 
   def quantumult_v2(conn, %{"uuid" => uuid} = params) do
     render conn, "quantumult_v2.text", uuid: uuid, params: params
+  end
+
+  defp request_host(conn) do
+    Atom.to_string(conn.scheme) <> "://" <> conn.host
   end
 end

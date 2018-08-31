@@ -14,11 +14,11 @@
 
   <div>
     <h4>Surge</h3>
-    <p><%= @url %>surge?password={{password}}&username={{port}}</p>
+    <p><%= @url %>/surge?password={{password}}&username={{port}}</p>
     <h4>ShadowsocksR & Quantumult SSR订阅</h3>
-    <p><%= @url %>ssr?password={{password}}&port={{port}}</p>
+    <p><%= @url %>/ssr?password={{password}}&port={{port}}</p>
     <h4>Quantumult(Download from...)</h3>
-    <p><%= @url %>quantumult?password={{password}}&port={{port}}</p>
+    <p><%= @url %>/quantumult?password={{password}}&port={{port}}</p>
   </div>
 
   </br>
@@ -32,6 +32,6 @@
 
   <div>
     <h4>Quantumult with V2Ray(Download from...)</h3>
-    <p><%= @url %>quantumult_v2?password={{password}}&port={{port}}&uuid={{uuid}}</p>
+    <p><%= @url %>/quantumult_v2?password={{password}}&port={{port}}&uuid={{uuid}}</p>
   </div>
  </div>
