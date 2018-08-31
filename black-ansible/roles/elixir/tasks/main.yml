@@ -1,0 +1,20 @@
+---
+- name: Add Erlang Solutions repo
+  get_url:
+    url: https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+    dest: /tmp
+- name: run dpkg
+  command:  dpkg -i erlang-solutions_1.0_all.deb
+  args:
+    chdir: /tmp
+- name: update packages index
+  apt: update_cache=yes
+
+- name: Install the Erlang/OTP platform
+  apt:
+    pkg: esl-erlang
+    state: present
+- name: Install Elixir
+  apt:
+    pkg: elixir
+    state: present

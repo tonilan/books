@@ -1,0 +1,20 @@
+---
+- hosts: books_sub
+  become: true
+  connection: paramiko
+  gather_facts: False
+
+  vars:
+    app_users:
+      - { username: deploy, groups: [deploy], user_sudo_cmds: ["/usr/sbin/service books *"], group_sudo_cmds: []}
+  
+  roles:
+    - sudoers
+    - ssh
+    - app-user
+    - app-folder
+    - hosts
+    - common
+    - timezone
+    - locale
+    - elixir

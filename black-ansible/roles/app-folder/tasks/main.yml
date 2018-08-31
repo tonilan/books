@@ -1,0 +1,17 @@
+---
+- name: chmod /data
+  file:
+    path: /data
+    state: directory
+    owner: root
+    group: root
+    mode: 0775
+  tags: [ deploy, bootstrap ]
+- name: create /data/deploy
+  file:
+    path: /data/deploy
+    state: directory
+    owner: deploy
+    group: deploy
+    mode: 0775
+  tags: [ deploy, bootstrap ]

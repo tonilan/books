@@ -1,0 +1,2 @@
+books_sub ansible_ssh_host=103.95.207.109 ansible_ssh_user=root
+
