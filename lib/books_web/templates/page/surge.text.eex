@@ -16,9 +16,10 @@ enhanced-mode-by-rule = false
 <% end %>
  
 [Proxy Group]
-Proxy = select,<%= Enum.map_join(@s5_servers, ", ", fn s -> s.name end)%>
+<% nodes = Enum.map_join(@s5_servers, ", ", fn s -> s.name end) %>
+Proxy = select,Auto,<%= nodes %>
 Apple = select,DIRECT,Proxy
-
+Auto = url-test,<%= nodes %>,url = http://www.gstatic.com/generate_204
 [Rule]
 # Netflix
 DOMAIN-SUFFIX,netflix.com,Proxy
