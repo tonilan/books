@@ -29,6 +29,6 @@ defmodule BooksWeb.PageController do
   end
 
   defp request_host(conn) do
-    "#{Atom.to_string(conn.scheme)}://#{conn.host}:#{conn.port}"
+    "#{Atom.to_string(conn.scheme)}://#{conn.host}"
   end
 end
