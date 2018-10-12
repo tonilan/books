@@ -11,12 +11,16 @@ enhanced-mode-by-rule = false
 
 
 [Proxy]
-<%= for server <- @s5_servers do %>
+<%= for server <- Books.Servers.socks5_tls() do %>
 <%= server.name %> = socks5-tls, <%= server.host %> , <%= server.s5_port %> , <%= @username %>, <%= @password %>, skip-cert-verify=true
+<% end %>
+
+<%= for server <- Books.Servers.ss_server() do %>
+<%= server.name %> Shadowsocks  = ss, <%= server.host %>,  <%= @username %>, encrypt-method=aes-256-gcm, password=<%= @password %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
 <% end %>
  
 [Proxy Group]
-<% nodes = Enum.map_join(@s5_servers, ", ", fn s -> s.name end) %>
+<% nodes = Enum.map_join(Books.Servers.socks5_tls(), ", ", fn s -> s.name end) %>
 Proxy = select,Auto,<%= nodes %>
 Apple = select,DIRECT,Proxy
 Auto = url-test,<%= nodes %>,url = http://www.gstatic.com/generate_204

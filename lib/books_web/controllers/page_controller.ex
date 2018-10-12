@@ -10,8 +10,7 @@ defmodule BooksWeb.PageController do
   # https://books.dsh.li/surge?password=aaa&username=96481
   def surge(conn, %{"username" => username, "password" => password}) do
     url = request_host(conn) <> conn.request_path <> "?" <> conn.query_string
-    s5_servers = Servers.socks5_tls()
-    render conn, "surge.text", url: url, username: username, password: password, s5_servers: s5_servers
+    render conn, "surge.text", url: url, username: username, password: password
   end
 
   # https://books.dsh.li/ssr?password=aaa&port=96481

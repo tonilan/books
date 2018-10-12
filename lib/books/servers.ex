@@ -9,6 +9,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -17,6 +18,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -25,6 +27,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -33,6 +36,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -41,6 +45,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -49,6 +54,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -57,6 +63,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -65,6 +72,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: true,
         vmess: true
       },
       %{
@@ -73,6 +81,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -81,6 +90,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -89,6 +99,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -97,6 +108,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -105,6 +117,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -113,6 +126,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -121,6 +135,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -129,6 +144,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -137,6 +153,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
+        ss: false,
         vmess: true
       }
     ]
@@ -144,6 +161,10 @@ defmodule Books.Servers do
 
   def socks5_tls do
     Enum.filter(all(), fn s -> s.socks5_tls end)
+  end
+  
+  def ss_server do
+    Enum.filter(all(), fn s -> s.ss end)  
   end
 
   def ssr_server do
