@@ -22,7 +22,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇭🇰香港 23流量珍贵 HKBN",
+        name: "🇭🇰香港 23无限流量 HKT",
         host: "svip23.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -85,7 +85,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸美国 30流量珍贵 GIA CN2",
+        name: "🇺🇸美国 30无限流量 SuperNCP",
         host: "svip30.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -94,7 +94,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸美国 31流量珍贵 GIA CN2",
+        name: "🇺🇸美国 31无限流量 SuperNCP",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
