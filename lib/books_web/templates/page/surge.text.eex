@@ -16,14 +16,15 @@ enhanced-mode-by-rule = false
 <% end %>
 
 <%= for server <- Books.Servers.ss_server() do %>
-<%= server.name %> Shadowsocks  = ss, <%= server.host %>,  <%= @port - 1000 %>, encrypt-method=aes-256-gcm, password=<%= @password %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
+<%= server.name %> Shadowsocks = ss, <%= server.host %>,  <%= @port - 1000 %>, encrypt-method=aes-256-gcm, password=<%= @password %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
 <% end %>
  
 [Proxy Group]
 <% nodes = Enum.map_join(Books.Servers.socks5_tls(), ", ", fn s -> s.name end) %>
-Proxy = select,Auto,<%= nodes %>
+<% ss_nodes = Enum.map_join(Books.Servers.ss_server(), ", ", fn s -> "#{s.name} Shadowsocks" end) %>
+Proxy = select,Auto,<%= nodes %>, <%= ss_nodes %>
 Apple = select,DIRECT,Proxy
-Auto = url-test,<%= nodes %>,url = http://www.gstatic.com/generate_204
+Auto = url-test,<%= nodes %>, <%= ss_nodes %>, url = http://www.gstatic.com/generate_204
 [Rule]
 # Netflix
 DOMAIN-SUFFIX,netflix.com,Proxy
