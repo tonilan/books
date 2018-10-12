@@ -7,11 +7,12 @@ defmodule BooksWeb.PageController do
     render conn, "index.html", url: url
   end
 
-  # https://books.dsh.li/surge?password=aaa&username=96481
-  def surge(conn, %{"username" => username, "password" => password}) do
+  # https://books.dsh.li/surge?password=aaa&username=96481&type=ss
+  def surge(conn, %{"username" => username, "password" => password} = params) do
     url = request_host(conn) <> conn.request_path <> "?" <> conn.query_string
     port = String.to_integer(username)
-    render conn, "surge.text", url: url, port: port, password: password
+    type = params["type"] || "all"
+    render conn, "surge.text", url: url, port: port, password: password, type: type
   end
 
   # https://books.dsh.li/ssr?password=aaa&port=96481
@@ -29,6 +30,10 @@ defmodule BooksWeb.PageController do
   end
 
   defp request_host(conn) do
-    "#{Atom.to_string(conn.scheme)}://#{conn.host}"
+    if Mix.env == :dev do
+      "#{Atom.to_string(conn.scheme)}://#{conn.host}:4000"
+    else
+      "#{Atom.to_string(conn.scheme)}://#{conn.host}"
+    end 
   end
 end
