@@ -13,8 +13,7 @@ enhanced-mode-by-rule = false
 [Proxy]
 <% ss_module = "http://omgib13x8.bkt.clouddn.com/SSEncrypt.module" %>
 <%= for server <- Books.Servers.ss_server() do %>
-  <%= server.name %> SS  = custom,<%= server.host %>,<%= @port - 1000 %>,aes-256-gcm, <%= @password %>, <%= ss_module %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
-<% end %>
+<%= server.name %>= custom,<%= server.host %>,<%= @port - 1000 %>,aes-256-gcm, <%= @password %>, <%= ss_module %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true<% end %>
 
 [Proxy Group]
 Proxy = select,<%= ss_nodes() %>, Auto
