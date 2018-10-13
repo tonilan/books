@@ -20,7 +20,7 @@ enhanced-mode-by-rule = false
 <% ss_module = "http://omgib13x8.bkt.clouddn.com/SSEncrypt.module" %>
 <%= if @type == "all" ||  @type == "ss" do %>
   <%= for server <- Books.Servers.ss_server() do %>
-<%= server.name %> ss  = custom,<%= server.host %>,<%= @port %>,aes-256-gcm, <%= @password %>, <%= ss_module %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
+<%= server.name %> ss  = custom,<%= server.host %>,<%= @port - 1000 %>,aes-256-gcm, <%= @password %>, <%= ss_module %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
   <% end %>
 <% end %>
 
