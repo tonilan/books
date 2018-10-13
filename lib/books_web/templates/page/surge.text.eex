@@ -25,7 +25,7 @@ enhanced-mode-by-rule = false
 <% end %>
 
 [Proxy Group]
-Proxy = select,Auto,<%= get_surge_nodes(@type) %>
+Proxy = select,<%= get_surge_nodes(@type) %>, Auto
 Apple = select,DIRECT,Proxy
 Auto = url-test,<%= get_surge_nodes(@type) %>, url = http://www.gstatic.com/generate_204
 [Rule]
