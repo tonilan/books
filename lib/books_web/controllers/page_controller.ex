@@ -10,7 +10,7 @@ defmodule BooksWeb.PageController do
   # https://books.dsh.li/surge?password=aaa&username=96481&type=ss
   def surge(conn, %{"username" => username, "password" => password} = params) do
     url = request_host(conn) <> conn.request_path <> "?" <> conn.query_string
-    port = String.to_integer(username)
+    port = String.to_integer(username) - 1000
     type = params["type"] || "all"
     render conn, "surge.text", url: url, port: port, password: password, type: type
   end
@@ -27,6 +27,17 @@ defmodule BooksWeb.PageController do
 
   def quantumult_v2(conn, %{"uuid" => uuid} = params) do
     render conn, "quantumult_v2.text", uuid: uuid, params: params
+  end
+
+  def quantumult_ss(conn, %{"port" => port, "password" => password}) do
+    user_info = Base.encode64("aes-256-gcm:#{password}")
+    port = String.to_integer(port) - 1000
+    plugin_params = URI.encode_www_form("simple-obfs;obfs=tls;obfs-host=www.icloud.com")
+
+    str = Servers.ss_server
+    |> Enum.map(fn s -> "ss://#{user_info}@#{s.host}:#{port}/?plugin=#{plugin_params}##{s.name} SS" end)
+    |> Enum.join("\n") 
+    text conn, Base.encode64(str)
   end
 
   defp request_host(conn) do

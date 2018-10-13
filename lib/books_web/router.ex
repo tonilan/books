@@ -21,6 +21,7 @@ defmodule BooksWeb.Router do
     get "/ssr", PageController, :ssr
     get "/quantumult", PageController, :quantumult
     get "/quantumult_v2", PageController, :quantumult_v2
+    get "/quantumult_ss", PageController, :quantumult_ss
   end
 
   # Other scopes may use custom stacks.
