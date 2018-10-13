@@ -22,7 +22,7 @@
     <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=s5</p>
     <h4>ShadowsocksR & Quantumult SSR订阅</h3>
     <p style="color: red"><%= @url %>/ssr?password={{password}}&port={{port}}</p>
-    <h4>Quantumult(Download from...)</h3>
+    <h4>Quantumult(Download from...)配置(包含配置和ssr订阅配置)</h3>
     <p style="color: red"><%= @url %>/quantumult?password={{password}}&port={{port}}</p>
   </div>
 

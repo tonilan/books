@@ -17,6 +17,6 @@ defmodule BooksWeb.PageView do
     Enum.map_join(Books.Servers.socks5_tls(), ", ", fn s -> s.name end)
   end
   defp ss_nodes do
-    Enum.map_join(Books.Servers.ss_server(), ", ", fn s -> "#{s.name} Shadowsocks" end)
+    Enum.map_join(Books.Servers.ss_server(), ", ", fn s -> "#{s.name} ss" end)
   end
 end
