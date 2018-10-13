@@ -13,13 +13,14 @@ enhanced-mode-by-rule = false
 [Proxy]
 <%= if @type == "all" || @type ==  "s5" do %>
   <%= for server <- Books.Servers.socks5_tls() do %>
-  <%= server.name %> = socks5-tls, <%= server.host %> , <%= server.s5_port %> , <%= @port %>, <%= @password %>, skip-cert-verify=true
+<%= server.name %> = socks5-tls, <%= server.host %>, <%= server.s5_port %>, <%= @port %>, <%= @password %>, skip-cert-verify=true
   <% end %>
 <% end %>
 
+<% ss_module = "http://omgib13x8.bkt.clouddn.com/SSEncrypt.module" %>
 <%= if @type == "all" ||  @type == "ss" do %>
   <%= for server <- Books.Servers.ss_server() do %>
-  <%= server.name %> Shadowsocks  = ss, <%= server.host %>,  <%= @port - 1000 %>, encrypt-method=aes-256-gcm, password=<%= @password %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
+<%= server.name %> Shadowsocks  = custom,<%= server.host %>,<%= @port - 1000 %>,aes-256-gcm, <%= @password %>, <%= ss_module %>, obfs=tls, obfs-host=www.icloud.com, udp-relay=true, tfo=true
   <% end %>
 <% end %>
 

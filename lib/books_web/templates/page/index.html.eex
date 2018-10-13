@@ -14,13 +14,16 @@
 
   <div>
     <h4>Surge配置</h3>
-    <p>包含Shadowsocks和socks5-tls: <%= @url %>/surge?password={{password}}&username={{port}}&type=all</p>
-    <p>包含Shadowsocks: <%= @url %>/surge?password={{password}}&username={{port}}&type=ss</p>
-    <p>包含 socks5-tls: <%= @url %>/surge?password={{password}}&username={{port}}&type=s5</p>
+    <p>包含Shadowsocks和socks5-tls: </p>
+    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=all</p>
+    <p>包含Shadowsocks: </p>
+    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=ss</p>
+    <p>包含 socks5-tls:</p> 
+    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=s5</p>
     <h4>ShadowsocksR & Quantumult SSR订阅</h3>
-    <p><%= @url %>/ssr?password={{password}}&port={{port}}</p>
+    <p style="color: red"><%= @url %>/ssr?password={{password}}&port={{port}}</p>
     <h4>Quantumult(Download from...)</h3>
-    <p><%= @url %>/quantumult?password={{password}}&port={{port}}</p>
+    <p style="color: red"><%= @url %>/quantumult?password={{password}}&port={{port}}</p>
   </div>
 
   </br>
@@ -34,6 +37,6 @@
 
   <div>
     <h4>Quantumult with V2Ray(Download from...)</h3>
-    <p><%= @url %>/quantumult_v2?password={{password}}&port={{port}}&uuid={{uuid}}</p>
+    <p style="color: red"><%= @url %>/quantumult_v2?password={{password}}&port={{port}}&uuid={{uuid}}</p>
   </div>
  </div>
