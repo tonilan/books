@@ -14,15 +14,10 @@
 
   <div>
     <h4>Surge配置</h3>
-    <p>包含Shadowsocks和socks5-tls: </p>
-    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=all</p>
-    <p>包含Shadowsocks: </p>
-    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=ss</p>
-    <p>包含 socks5-tls:</p> 
-    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}&type=s5</p>
+    <p style="color: red"><%= @url %>/surge?password={{password}}&username={{port}}</p>
     <h4>Quantumult Shadowsocks 订阅配置</h3>
     <p style="color: red"><%= @url %>/quantumult_ss?password={{password}}&port={{port}}</p>
-    <h4>ShadowsocksR & Quantumult SSR订阅</h3>
+    <h4>ShadowsocksR & Quantumult ShadowsocksR 订阅配置</h3>
     <p style="color: red"><%= @url %>/ssr?password={{password}}&port={{port}}</p>
     <h4>Quantumult(Download from...)配置(包含配置和ssr订阅配置)</h3>
     <p style="color: red"><%= @url %>/quantumult?password={{password}}&port={{port}}</p>

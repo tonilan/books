@@ -7,12 +7,11 @@ defmodule BooksWeb.PageController do
     render conn, "index.html", url: url
   end
 
-  # https://books.dsh.li/surge?password=aaa&username=96481&type=ss
-  def surge(conn, %{"username" => username, "password" => password} = params) do
+  # https://books.dsh.li/surge?password=aaa&username=96481
+  def surge(conn, %{"username" => username, "password" => password}) do
     url = request_host(conn) <> conn.request_path <> "?" <> conn.query_string
     port = String.to_integer(username)
-    type = params["type"] || "all"
-    render conn, "surge.text", url: url, port: port, password: password, type: type
+    render conn, "surge.text", url: url, port: port, password: password
   end
 
   # https://books.dsh.li/ssr?password=aaa&port=96481
