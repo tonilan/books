@@ -4,7 +4,7 @@ defmodule Books.Servers do
   def all do
     [
       %{
-        name: "🇭🇰香港 21无限流量 HKT ",
+        name: "🇭🇰HK 21 HKT ",
         host: "svip21.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -13,7 +13,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇭🇰香港 22无限流量 HKT",
+        name: "🇭🇰HK 22 HKT",
         host: "svip22.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -22,7 +22,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇭🇰香港 23无限流量 HKT",
+        name: "🇭🇰HK 23 HKT",
         host: "svip23.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -40,7 +40,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇷🇺俄国 25无限流量",
+        name: "🇷🇺RU 25",
         host: "svip25.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -49,7 +49,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇷🇺俄国 26无限流量",
+        name: "🇷🇺RU 26",
         host: "svip26.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -58,7 +58,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇷🇺俄国 27无限流量",
+        name: "🇷🇺RU 27",
         host: "svip27.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -67,7 +67,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇰🇷韩国 28无限流量 SK",
+        name: "🇰🇷KR 28 SK",
         host: "svip28.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -76,7 +76,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇰🇷韩国 29无限流量 SK",
+        name: "🇰🇷KR 29 SK",
         host: "svip29.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -85,7 +85,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸美国 30无限流量 SuperNCP",
+        name: "🇺🇸US 30 HE",
         host: "svip30.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -94,7 +94,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸美国 31无限流量 SuperNCP",
+        name: "🇺🇸US 31 HE",
         host: "svip31.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -103,7 +103,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸美国 32流量珍贵 GIA CN2",
+        name: "🇺🇸US 32 GIA CN2",
         host: "svip32.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -112,7 +112,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸美国 33流量珍贵 GIA CN2",
+        name: "🇺🇸US 33 GIA CN2",
         host: "svip33.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -121,7 +121,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇯🇵日本 34无限流量 IIJ",
+        name: "🇯🇵JP 34 IIJ",
         host: "svip34.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -130,7 +130,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇯🇵日本 35无限流量 IIJ",
+        name: "🇯🇵JP 35 IIJ",
         host: "svip35.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -139,7 +139,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇷🇺伯力 36流量珍贵",
+        name: "🇺🇸US 36 GIA CN2",
         host: "svip36.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -148,7 +148,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇷🇺伯力 37流量珍贵",
+        name: "🇺🇸US 37 GIA CN2",
         host: "svip37.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
