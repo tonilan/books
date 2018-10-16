@@ -31,7 +31,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇷🇺俄国 24无限流量",
+        name: "🇷🇺RU 24",
         host: "svip24.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
