@@ -36,7 +36,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
-        ss: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -45,7 +45,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
-        ss: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -54,7 +54,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
-        ss: true,
+        ss: false,
         vmess: true
       },
       %{
@@ -63,7 +63,7 @@ defmodule Books.Servers do
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
-        ss: true,
+        ss: false,
         vmess: true
       },
       %{
