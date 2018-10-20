@@ -139,7 +139,7 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸US 36 GIA CN2",
+        name: "🇯🇵JP 36 IIJ",
         host: "svip36.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
@@ -148,14 +148,32 @@ defmodule Books.Servers do
         vmess: true
       },
       %{
-        name: "🇺🇸US 37 GIA CN2",
+        name: "🇯🇵JP 37 IIJ",
         host: "svip37.mm1080p.rocks",
         s5_port: 555,
         socks5_tls: true,
         ssr: true,
         ss: true,
         vmess: true
-      }
+      },
+      %{
+        name: "🇯🇵JP 38 IIJ",
+        host: "svip38.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true,
+        ss: true,
+        vmess: true
+      },
+      %{
+        name: "🇯🇵JP 39 IIJ",
+        host: "svip39.mm1080p.rocks",
+        s5_port: 555,
+        socks5_tls: true,
+        ssr: true,
+        ss: true,
+        vmess: true
+      },
     ]
   end
 
