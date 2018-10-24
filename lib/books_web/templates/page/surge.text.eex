@@ -33,6 +33,18 @@ IP-CIDR,23.246.0.0/18,Proxy,no-resolve
 IP-CIDR,198.45.48.0/20,Proxy,no-resolve
 IP-CIDR,108.175.32.0/20,Proxy,no-resolve
  
+# facebook
+DOMAIN-SUFFIX,facebook.com,Proxy,force-remote-dns
+DOMAIN-SUFFIX,facebook.net,Proxy,force-remote-dns
+DOMAIN-SUFFIX,fb.com,Proxy,force-remote-dns
+DOMAIN-SUFFIX,fb.me,Proxy,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,Proxy,force-remote-dns
+DOMAIN-SUFFIX,cdninstagram.com,Proxy,force-remote-dns
+DOMAIN-SUFFIX,instagram.com,Proxy,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.net,Proxy,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.com,Proxy,force-remote-dns
+
+
 # Apple
 DOMAIN-SUFFIX,s.mzstatic.com,Proxy
 DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
@@ -60,7 +72,6 @@ DOMAIN-SUFFIX,me.com,Apple
 DOMAIN-SUFFIX,cdn-apple.com,Apple
 
 # DNS polution
-DOMAIN-SUFFIX,facebook.com,Proxy,force-remote-dns
 DOMAIN-SUFFIX,fb.com,Proxy,force-remote-dns
 DOMAIN-SUFFIX,fb.me,Proxy,force-remote-dns
 DOMAIN-SUFFIX,fbcdn.net,Proxy,force-remote-dns
@@ -301,8 +312,7 @@ DOMAIN-SUFFIX,ytimg.com,Proxy
 DOMAIN-SUFFIX,stripe.com,Proxy
 DOMAIN-SUFFIX,gitlab.com,Proxy,enhanced-mode
 DOMAIN-SUFFIX,continuum.io,Proxy,enhanced-mode
-DOMAIN-SUFFIX,facebook.net,Proxy,enhanced-mode
-
+ 
 # Telegram
 IP-CIDR,91.108.56.0/22,Proxy,no-resolve
 IP-CIDR,91.108.4.0/22,Proxy,no-resolve
